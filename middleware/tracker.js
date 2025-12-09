@@ -1,4 +1,3 @@
-// middleware/tracker.js
 import Tracking from "../models/Tracking.js";
 
 export const trackPageView = async (req, res, next) => {
