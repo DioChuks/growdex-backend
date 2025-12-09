@@ -1,7 +1,5 @@
 import express from "express";
 import {
-  getPosts,
-  getPost,
   getPublicPosts,
 } from "../controllers/postController.js";
 
@@ -10,7 +8,5 @@ const router = express.Router();
 
 // Public routes after
 router.get("/public", getPublicPosts);
-router.get("/", getPosts);
-router.get("/:slug", getPost);
 
 export default router;
